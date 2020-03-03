@@ -65,7 +65,10 @@ class _CategoryPageState extends State<CategoryPage> {
         child: RaisedButton(
         child: Text("Add New"),
         onPressed: () {
-    //todo: implement navigation
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => AddCategory()),
+        );
     },
     ),
     ),
@@ -94,6 +97,8 @@ class _CategoryPageState extends State<CategoryPage> {
         );
       }
      ),
+    ),
+    ],
     );
   }
 }

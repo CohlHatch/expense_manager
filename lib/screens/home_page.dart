@@ -38,14 +38,21 @@ class _HomePageState extends State<HomePage>
             Center(
                 child: Text(
                   "Home",
-                  style: Theme.of(context).textTheme.display1,
+                  style: Theme
+                      .of(context)
+                      .textTheme
+                      .display1,
                 )),
             CategoryPage(),
             Center(
                 child: Text(
                   "Reports",
-                  style: Theme.of(context).textTheme.display1,
+                  style: Theme
+                      .of(context)
+                      .textTheme
+                      .display1,
                 ))
           ],
         ));
+    }
   }
