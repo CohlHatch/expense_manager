@@ -28,7 +28,8 @@ class DashboardPage extends StatelessWidget {
 
     var ls = [expense1, expense2, expense3];
 
-    return ListView.builder(
+    return Expanded(
+      child: ListView.builder(
       itemCount: ls.length,
       itemBuilder: (context, index) {
 
@@ -56,6 +57,7 @@ class DashboardPage extends StatelessWidget {
             subtitle: Text(
               expense.notes,
             ),
+          ),
           ),
         );
       },
